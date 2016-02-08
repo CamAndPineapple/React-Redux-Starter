@@ -1,1 +1,6 @@
-# React-Redux-Starter
+# React-Redux-Starter 
+
+```
+	> npm install
+	> npm start
+```

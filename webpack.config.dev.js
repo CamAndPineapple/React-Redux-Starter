@@ -11,6 +11,9 @@ module.exports = {
     'webpack/hot/dev-server',
     './src/index.js'
   ],
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js'
@@ -24,7 +27,7 @@ module.exports = {
   module: {
     loaders: [{
       exclude: /node_modules/,
-      test: /\.js?$/,
+      test: /\.jsx?$/,
       loader: 'babel'
     }, {
       test: /\.scss$/,
